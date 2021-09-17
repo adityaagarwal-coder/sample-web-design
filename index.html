@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site in India: Shop Online for Mobiles, Books and Watches</title>
+</head>
+<style>
+    #navlist {
+        display: flex;
+        list-style: none;
+    }
+
+    #logo {
+        height: 40px;
+        width: 150px;
+
+    }
+
+    #navbar {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        background-color:#0F1111
+        
+    }
+
+    #search-icon {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(255, 196, 0);
+    }
+
+    #flag-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navlistitems {
+        margin-inline: 60px;
+        color: white;
+        padding-top: 5px;
+    }
+    .navlistitems
+    {
+        cursor: pointer;
+    }
+    #searchbar {
+        display:flex;
+    }
+    #region-bar {
+        display:flex;
+    }
+    #Account-bar
+    {
+        display:flex;
+    }
+    .pronavlist {
+        display:flex;
+        list-style: none;
+    }
+    .pronavitems {
+        margin-inline: 20px;
+        color: white;
+        border-color: white;
+        margin-block: 5px;
+        border-radius: 10px;
+        padding-inline: 3px;
+        /* border-width: 5px 5px 5px 5px; */
+    }
+    .pronavitems:hover
+    {
+        background-color: white;
+        color:black;
+        cursor: pointer;
+    }
+    #hamburgerlogo {
+        height: 30px;
+        width: 30px;
+    }
+    .pronav
+    {
+        background-color: #21303a;
+    }
+    .acimg
+    {
+        width: 140px;
+        height: 100px;
+    }
+    .acimg:hover
+    {
+        cursor: pointer;
+    }
+    .r1
+    {
+        display: flex;
+        margin-left:8px;
+    }
+    .r2
+    {
+        display: flex;
+        margin-left:8px;
+        margin-bottom: 30px;
+    }
+    .data1
+    {
+        display: flex;
+    }
+    .d1p1
+    {
+        margin-inline: 10px;
+        background-color: white;
+        padding: 20px;
+        padding-top: 5px;
+        font-size: 15px;
+        border-radius:10px;
+        margin-bottom:50px;
+    }
+    .c1 {
+        margin-inline: 10px;
+    }
+    .footlistitems
+    {
+        color: white;
+        list-style: none;
+    }
+    .footlistitems:hover
+    {
+        cursor: pointer;
+    }
+    .list
+    {
+        display: flex;
+    }
+    .footer
+    {
+        background-color:#232F3E;
+    }
+    .footlist
+    {
+        margin-inline:60px;
+    }
+</style>
+
+<body style="background-color: rgb(131, 216, 228);">
+    <div id="navbar">
+        <!-- <nav class="navbar"> -->
+            <ul id="navlist">
+                <li class="navlistitems"><img id="logo"
+                        src="https://i0.wp.com/zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-White.png?fit=636%2C193&ssl=1">
+                </li>
+
+
+                <li class="navlistitems">
+                    Hello<br>
+                    <div style="font-weight: bold; width: 50px">Select your address</div>
+                </li>
+
+                <li class="navlistitems">
+                    <div id="searchbar">
+                        <label>All</label>
+                        <select name="All" id="all" style="background-color:#0F1111; color:white;">All</select>
+                        <input type="text" placeholder="Search for products" id="search">
+                        <img src="http://www.clker.com/cliparts/n/C/y/X/u/K/search-icon-md.png" alt="" id="search-icon">
+                    </div>
+                </li>
+
+                <li class="navlistitems">
+                    <div id="region-bar">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+                        alt="" id="flag-icon">
+                    <select name="region" id="region" style="background-color:#0F1111; color:white;"></select>
+                    </div>
+                </li>
+
+                <li class="navlistitems">
+                    <div id="Account-bar">
+                        <div style="width: 110px;" OnClick="window.location.href='/signin'">
+                    Hello, Sign In<br>
+                    <div style="font-weight: bold;" OnClick="window.location.href='/signin'">Account and Lists</div>
+                    </div>
+                    <select name="signin" id="signin" style="height: 25px; background-color:#0F1111; color:white;" OnClick="window.location.href='/signin'"></select>
+                    </div>
+                </li>
+
+                <li class="navlistitems">Return and Orders</li>
+
+                <li class="navlistitems">Cart</li>
+            </ul>
+        <!-- </nav> -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="pronav">
+        <ul class="pronavlist">
+            <li class="pronavitems"><div class="hamburger">
+                <img src="https://i.pinimg.com/736x/ee/c0/71/eec071442e9a1b8e017c5a7c1853b880.jpg" alt="" id="hamburgerlogo">
+                All
+            </div></li>
+            <li class="pronavitems">Best Sellers</li>
+            <li class="pronavitems">Mobiles</li>
+            <li class="pronavitems">Fashion</li>
+            <li class="pronavitems">Electronics</li>
+            <li class="pronavitems">Amazon Pay</li>
+            <li class="pronavitems">Prime</li>
+            <li class="pronavitems">Customer Service</li>
+            <li class="pronavitems">New Releases</li>
+            <li class="pronavitems">Today's Deals</li>
+            <li class="pronavitems">Computers</li>
+            <li class="pronavitems">Home & Kitchen</li>
+        </ul>
+    </div>
+    <div class="data1">
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="data1">
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="data1">
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="data1">
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+        <div class="d1p1">
+            <h2>
+                Top picks for your home
+            </h2>
+            <br>
+            <div class="r1">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+            <div class="r2">
+                <div class="c1">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+                <div class="c2">
+                    <img src="http://healthairindia.com/wp-content/uploads/2020/11/msy-gn-series.png" alt="" class="acimg" Onclick="window.location.href='/accollection'">
+                    <br>
+                    ACs
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="footer">
+    <div class="list">
+        <ul class="footlist">
+            <h2 class="footlistitems">Get to Know Us</h2>
+            <li class="footlistitems">About Us</li>
+            <li class="footlistitems">Careers</li>
+            <li class="footlistitems">Press Releases</li>
+            <li class="footlistitems">Amazon Cares</li>
+            <li class="footlistitems">Gift a Smile</li>
+        </ul>
+        <ul class="footlist">
+            <h2 class="footlistitems">Connect with Us</h2>
+            <li class="footlistitems">Facebook</li>
+            <li class="footlistitems">Twitter</li>
+            <li class="footlistitems">Instagram</li>
+        </ul>
+        <ul class="footlist">
+            <h2 class="footlistitems">Make money with Us</h2>
+            <li class="footlistitems">Sell on Amazon</li>
+            <li class="footlistitems">Sell under Amazon Accelerator</li>
+            <li class="footlistitems">Amazon Global Selling</li>
+            <li class="footlistitems"></li>
+            <li class="footlistitems"></li>
+            <li class="footlistitems"></li>
+            <li class="footlistitems"></li>
+        </ul>
+        <ul class="footlist">
+            <h2 class="footlistitems">Let Us Help you</h2>
+            <li class="footlistitems"></li>
+            <li class="footlistitems"></li>
+            <li class="footlistitems"></li>
+            <li class="footlistitems"></li>
+            <li class="footlistitems"></li>
+            <li class="footlistitems"></li>
+            <li class="footlistitems"></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC</title>
+    style
+        include ./static/style.css
+</head>
+
+<body style="background-color: rgb(131, 216, 228);">
+    <div id="navbar">
+        //-
+        //- <!-- <nav class="navbar"> -->
+        <ul id="navlist">
+            <li class="navlistitems">
+                <img id="logo" src="https://i0.wp.com/zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-White.png?fit=636%2C193&ssl=1"> 
+            </li>
+
+
+            <li class="navlistitems">
+                | Hello<br>
+                <div style="font-weight: bold; width: 50px">Select your address</div>
+            </li>
+
+            <li class="navlistitems">
+                <div id="searchbar">
+                    <label>All</label>
+                    <select name="All" id="all" style="background-color:#0F1111; color:white;">All</select>
+                    <input type="text" placeholder="Search for products" id="search">
+                    <img src="http://www.clker.com/cliparts/n/C/y/X/u/K/search-icon-md.png" alt="" id="search-icon">
+                </div>
+            </li>
+
+            <li class="navlistitems">
+                <div id="region-bar">
+                   <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="" id="flag-icon">
+                    <select name="region" id="region" style="background-color:#0F1111; color:white;"></select>
+                </div>
+            </li>
+
+            <li class="navlistitems">
+                <div id="Account-bar">
+                    <div style="width: 110px;" OnClick="window.location.href='/signin'">
+                       | Hello, Sign In<br>
+                    <div style="font-weight: bold;" OnClick="window.location.href='/signin'">Account and Lists</div>
+                    </div>
+                    <select name="signin" id="signin" style="height: 25px; background-color:#0F1111; color:white;" OnClick="window.location.href='/signin'"></select> 
+                </div>
+            </li>
+
+            <li class="navlistitems">Return and Orders</li>
+
+            <li class="navlistitems">Cart</li>
+        </ul>
+        //- <!-- </nav> -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="pronav">
+        <ul class="pronavlist">
+            <li class="pronavitems">
+                <div class="hamburger">
+                    <img src="https://i.pinimg.com/736x/ee/c0/71/eec071442e9a1b8e017c5a7c1853b880.jpg" alt="" id="hamburgerlogo">
+                    All
+                </div>
+            </li>
+            <li class="pronavitems">Best Sellers</li>
+            <li class="pronavitems">Mobiles</li>
+            <li class="pronavitems">Fashion</li>
+            <li class="pronavitems">Electronics</li>
+            <li class="pronavitems">Amazon Pay</li>
+            <li class="pronavitems">Prime</li>
+            <li class="pronavitems">Customer Service</li>
+            <li class="pronavitems">New Releases</li>
+            <li class="pronavitems">Today's Deals</li>
+            <li class="pronavitems">Computers</li>
+            <li class="pronavitems">Home & Kitchen</li>
+        </ul>
+    </div>
+    <div class="page">
+        <div class="filter">
+            <ul class="price" style="list-style:none;">
+                <li class="filteritems">Over Rs30,000</li>
+                <li class="filteritems">Rs20,000 - Rs30,000</li>
+                <li class="filteritems">Under Rs10,000</li>
+                <li class="filteritems">Rs10,000 - Rs15,000</li>
+            </ul>
+            <br>
+            <ul class="size" style="list-style:none;">
+                <li class="filteritems"><input type="checkbox">Top Brands</li>
+                <li class="filteritems"><input type="checkbox">Made for Amazon</li>
+            </ul>
+            <br>
+            <ul class="brand" style="list-style:none;">
+                <li class="filteritems"><input type="checkbox">Whirlpool</li>
+                <li class="filteritems"><input type="checkbox">Panasonic</li>
+                <li class="filteritems"><input type="checkbox">LG</li>
+                <li class="filteritems"><input type="checkbox">Daikin</li>
+                <li class="filteritems"><input type="checkbox">BLUE STAR</li>
+                <li class="filteritems"><input type="checkbox">Blue Star</li>
+                <li class="filteritems"><input type="checkbox">Samsung</li>
+            </ul>
+            <br>
+            <ul class="type" style="list-style:none;">
+                <li class="filteritems"><input type="checkbox">Split System</li>
+                <li class="filteritems"><input type="checkbox">Window</li>
+                <li class="filteritems"><input type="checkbox">Cassette</li>
+            </ul>
+            <br>
+            <ul class="roomsize" style="list-style:none;">
+                <li class="filteritems"><input type="checkbox">111 to 150sqft</li>
+                <li class="filteritems"><input type="checkbox">Upto 110sqft</li>
+                <li class="filteritems"><input type="checkbox">151 to 200sqft</li>
+            </ul>
+            <br>
+            <ul class="starrating" style="list-style:none;">
+                <li class="filteritems"><input type="checkbox">1 Star</li>
+                <li class="filteritems"><input type="checkbox">2 Star</li>
+                <li class="filteritems"><input type="checkbox">3 Star</li>
+                <li class="filteritems"><input type="checkbox">4 Star</li>
+                <li class="filteritems"><input type="checkbox">5 Star</li>
+            </ul>
+        </div>
+        <div class="products">
+            <div class="data1">
+                <div class="d1p1">
+                    <h2>
+                       | #{name}
+                    </h2>
+                    <br>
+                    <div class="r1">
+                        <div class="c1">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/air-conditioner-new/k/e/g/1-0-hitachi-window-raw511kud-original-imadvurayva6tfvd.jpeg?q=70" Onclick="window.location.href='/accollection'" class="proimg">
+                            <br>| #{price}
+                        </div>
+                    </div>
+                </div>
+                <div class="d1p1">
+                    <h2>
+                       | #{name}
+                    </h2>
+                    <br>
+                    <div class="r1">
+                        <div class="c1">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/air-conditioner-new/k/e/g/1-0-hitachi-window-raw511kud-original-imadvurayva6tfvd.jpeg?q=70" alt="" class="acimg" Onclick="window.location.href='/accollection'" class="proimg"> 
+                            <br>| #{price}
+                        </div>
+                    </div>
+                </div>
+                <div class="d1p1">
+                    <h2>
+                       | #{name}
+                    </h2>
+                    <br>
+                    <div class="r1">
+                        <div class="c1">
+                            <img src="https://rukminim1.flixcart.com/image/416/416/air-conditioner-new/k/e/g/1-0-hitachi-window-raw511kud-original-imadvurayva6tfvd.jpeg?q=70" Onclick="window.location.href='/accollection'" class="proimg">
+                            <br>| #{price}
+                        </div>
+                    </div>
+                </div>
+                <div class="d1p1">
+                    //- <!-- 
+                    <h2>
+                       | #{name}
+                    </h2> 
+                    <br>
+                    <div class="r1">
+                        <div class="c1">
+                            <img src=#| {image} alt="" class="acimg" Onclick="window.location.href='/accollection'" class="proimg">
+                            <br>| #{price}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="list">
+            <ul class="footlist">
+                <h2 class="footlistitems">Get to Know Us</h2>
+                <li class="footlistitems">About Us</li>
+                <li class="footlistitems">Careers</li>
+                <li class="footlistitems">Press Releases</li>
+                <li class="footlistitems">Amazon Cares</li>
+                <li class="footlistitems">Gift a Smile</li>
+            </ul>
+            <ul class="footlist">
+                <h2 class="footlistitems">Connect with Us</h2>
+                <li class="footlistitems">Facebook</li>
+                <li class="footlistitems">Twitter</li>
+                <li class="footlistitems">Instagram</li>
+            </ul>
+            <ul class="footlist">
+                <h2 class="footlistitems">Make money with Us</h2>
+                <li class="footlistitems">Sell on Amazon</li>
+                <li class="footlistitems">Sell under Amazon Accelerator</li>
+                <li class="footlistitems">Amazon Global Selling</li>
+                <li class="footlistitems"></li>
+                <li class="footlistitems"></li>
+                <li class="footlistitems"></li>
+                <li class="footlistitems"></li>
+            </ul>
+            <ul class="footlist">
+                <h2 class="footlistitems">Let Us Help you</h2>
+                <li class="footlistitems"></li>
+                <li class="footlistitems"></li>
+                <li class="footlistitems"></li>
+                <li class="footlistitems"></li>
+                <li class="footlistitems"></li>
+                <li class="footlistitems"></li>
+                <li class="footlistitems"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
